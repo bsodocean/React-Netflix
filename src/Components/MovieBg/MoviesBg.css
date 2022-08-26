@@ -1,0 +1,115 @@
+.video-bg-content {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin: 14% 0 0 5%;
+}
+
+.bg-overlay {
+  position: relative;
+  width: 100%;
+}
+
+.bg-overlay:before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(180deg, hsla(0deg, 0%, 8%, 0) 0, hsla(0deg, 0%, 8%, 0.15) 60%, hsla(0deg, 0%, 8%, 0.25) 70%, hsla(0deg, 0%, 8%, 0.5) 80%, #141414 90%, #141414);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+  pointer-events: none;
+}
+
+.movie-logo-img {
+  width: 300px;
+  z-index: 10;
+}
+
+.movie-desc {
+  z-index: 100;
+  width: 540px;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-family: "Netflix Sans Medium";
+  color: var(--WHITE);
+}
+
+.btn-container {
+  display: flex;
+}
+
+.play-btn {
+  width: 140px;
+  height: 56px;
+}
+
+.play-btn:hover {
+  background-color: rgba(134, 134, 134, 0.3450980392);
+  color: var(--WHITE);
+}
+
+.dummy-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.3rem;
+  margin-right: 0.6rem;
+  font-family: "Netflix Sans Medium";
+  gap: 15px;
+  padding-top: 3px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.icon {
+  font-size: 1.6rem;
+}
+
+.myList-btn {
+  background-color: rgba(134, 134, 134, 0.3450980392);
+  color: var(--WHITE);
+  width: 175px;
+  height: 57px;
+}
+
+.myList-btn:hover {
+  background-color: var(--WHITE);
+  color: var(--BLACK);
+  transition: all 1s;
+}
+
+@media (max-width: 768px) {
+  .video-bg-content {
+    justify-content: center;
+    margin: 35% 0 0 10%;
+  }
+  .video-bg-content .movie-logo-img {
+    max-width: 200px;
+  }
+  .video-bg-content .movie-desc {
+    font-size: 1rem;
+    max-width: 295px;
+  }
+  video {
+    height: 75vh;
+  }
+  .play-btn, .myList-btn {
+    width: 135px;
+    height: 45px;
+    font-size: 1rem;
+    border-radius: 0.8rem;
+  }
+  .play-btn .icon, .myList-btn .icon {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=MoviesBg.css.map */

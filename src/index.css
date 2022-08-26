@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Netflix Sans Bold";
+  src: url("./Fonts/netflixsans-bold-webfont.woff") format("woff");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Netflix Sans Light", sans-serif;
+  src: url("./Fonts/netflixsans-light-webfont.woff") format("woff");
+  font-weight: light;
+}
+
+@font-face {
+  font-family: "Netflix Sans Medium";
+  src: local("NetflixSans"),
+    url("./Fonts/netflixsans-medium-webfont.woff") format("woff");
+  font-weight: medium;
+}
+
+@font-face {
+  font-family: "Netflix Sans";
+  src: url("./Fonts/netflixsans-regular-webfont.woff") format("woff");
+  font-weight: normal;
+}
+
+:root {
+  --RED: #ff0000;
+  --BLACK: #141414;
+  --WHITE: #ffffff;
+}
+
+body {
+  font-family: "Netflix Sans Light", sans-serif;
+  background-color: var(--BLACK);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

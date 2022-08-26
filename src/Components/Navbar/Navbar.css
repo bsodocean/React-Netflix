@@ -1,0 +1,178 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(180deg, rgb(21, 14, 13) 0%, rgba(203, 203, 203, 0.001) 100%);
+  padding: 0.5rem;
+  z-index: 101;
+  transition: 0.3s ease-in-out;
+}
+.navbar #search-bar {
+  background-color: var(--BLACK);
+  width: 15vw;
+  height: 3.5vh;
+  border-radius: 20px;
+  border-style: none;
+  outline: none;
+  margin-right: 3.5rem;
+  padding: 0.5rem;
+  color: var(--WHITE);
+  font-size: 1rem;
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2.5rem;
+  margin-top: 0.5rem;
+  max-width: 105px;
+}
+
+.nav-logo {
+  max-width: 130px;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  margin-right: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.cta-btn {
+  width: 100px;
+  margin: 0.2rem;
+  height: 35px;
+  border-radius: 5px;
+  font-family: "Netflix Sans";
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  letter-spacing: 0.5px;
+}
+
+.cta-btn:hover {
+  -webkit-animation-name: wobble;
+          animation-name: wobble;
+}
+
+.sign-in-btn {
+  background-color: #8B0000;
+  color: var(--WHITE);
+}
+
+.sign-btn, .account-button {
+  background: none;
+  color: var(--WHITE);
+}
+
+.sign-up-button {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 2px;
+  font-size: 1rem;
+  border: none;
+  background-color: #8B0000;
+  color: var(--WHITE);
+  font-family: "Netflix Sans";
+  cursor: pointer;
+}
+
+.logout-btn {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  border-radius: 2px;
+  font-size: 1rem;
+  border: none;
+  background-color: #8B0000;
+  color: var(--WHITE);
+  font-family: "Netflix Sans";
+  cursor: pointer;
+}
+
+@-webkit-keyframes wobble-vertical-on-hover {
+  16.65% {
+    transform: translateY(8px);
+  }
+  33.3% {
+    transform: translateY(-6px);
+  }
+  49.95% {
+    transform: translateY(4px);
+  }
+  66.6% {
+    transform: translateY(-2px);
+  }
+  83.25% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes wobble-vertical-on-hover {
+  16.65% {
+    transform: translateY(8px);
+  }
+  33.3% {
+    transform: translateY(-6px);
+  }
+  49.95% {
+    transform: translateY(4px);
+  }
+  66.6% {
+    transform: translateY(-2px);
+  }
+  83.25% {
+    transform: translateY(1px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.wobble-vertical-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.wobble-vertical-on-hover:hover, .wobble-vertical-on-hover:focus, .wobble-vertical-on-hover:active {
+  -webkit-animation-name: wobble-vertical-on-hover;
+  animation-name: wobble-vertical-on-hover;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+.sticky-nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(180deg, rgb(21, 14, 13) 0%, rgba(203, 203, 203, 0.02) 100%);
+  background-color: var(--BLACK);
+  padding: 0.5rem;
+  z-index: 101;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 1rem;
+    max-width: 100px;
+  }
+  .search-icon {
+    font-size: 1.3rem;
+    margin: 1.09rem 2.2rem 0 0;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

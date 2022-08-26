@@ -1,0 +1,89 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(180deg, rgb(21, 14, 13) 0%, rgba(203, 203, 203, 0.001) 100%);
+  padding: 0.5rem;
+  z-index: 101;
+  transition: 0.3s ease-in-out;
+}
+.navbar #search-bar {
+  background-color: var(--BLACK);
+  width: 15vw;
+  height: 3.5vh;
+  border-radius: 20px;
+  border-style: none;
+  outline: none;
+  margin-right: 3.5rem;
+  padding: 0.5rem;
+  color: var(--WHITE);
+  font-size: 1rem;
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 2.5rem;
+  margin-top: 0.5rem;
+  max-width: 105px;
+}
+
+.nav-logo {
+  max-width: 130px;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  margin-right: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.cta-btn {
+  width: 100px;
+  margin: 0.2rem;
+  height: 35px;
+  border-radius: 5px;
+  font-family: "Netflix Sans";
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  letter-spacing: 0.5px;
+}
+
+.sign-in-btn {
+  background-color: #8B0000;
+  color: var(--WHITE);
+}
+
+.sign-btn {
+  background: none;
+  color: var(--WHITE);
+}
+
+.sticky-nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(180deg, rgb(21, 14, 13) 0%, rgba(203, 203, 203, 0.02) 100%);
+  background-color: var(--BLACK);
+  padding: 0.5rem;
+  z-index: 101;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 1rem;
+    max-width: 100px;
+  }
+  .search-icon {
+    font-size: 1.3rem;
+    margin: 1.09rem 2.2rem 0 0;
+  }
+}/*# sourceMappingURL=Navbar.css.map */

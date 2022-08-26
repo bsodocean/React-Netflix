@@ -1,0 +1,40 @@
+h2 {
+  margin: 0rem 0 0 1.3rem;
+  color: var(--WHITE);
+  font-size: 1.7rem;
+}
+
+.movie-row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.movie-row-poster {
+  width: 100%;
+  max-height: 175px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  transition: transform 450ms;
+}
+
+.movie-row-poster:hover {
+  transform: scale(1.08);
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: var(--WHITE);
+}
+
+@media only screen and (max-width: 768px) {
+  .movie-row {
+    margin: 0;
+  }
+  .movie-row-slide {
+    margin-right: 8.6rem;
+  }
+  .movie-img {
+    width: 195px;
+  }
+}/*# sourceMappingURL=MovieContainer.css.map */
